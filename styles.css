@@ -1,0 +1,26 @@
+body{
+    justify-content: center;
+}
+
+button {
+    background-color: blue;
+    font-size: 20px;
+    padding: 10px 20px;
+    color: azure;
+  }
+
+#Keyboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+#first, #second, #third {
+display: flex;
+justify-content: center;
+}
+
+button {
+margin: 5px;
+}
+
