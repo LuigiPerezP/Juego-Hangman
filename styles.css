@@ -1,20 +1,26 @@
 body {
     justify-content: center;
   }
-  
-  button {
-    background-color: #f2f2f2;
-    font-size: 20px;
-    padding: 10px 20px;
-    color: #333;
-    border: none;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  }
-  
+
+
   .Keyboard {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .Keyboard button{
+    width: 3rem;
+    height: 3rem;
+    background-color: #f2f2f2;
+    font-size: 1.3rem;
+    color: #333;
+    border: none;
+    box-shadow: 0rem 0.1rem 0.4rem rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+
+  .Keyboard button:hover{
+    background-color:bisque;
   }
   
   #first,
@@ -25,11 +31,21 @@ body {
   }
   
   button {
-    margin: 5px;
+    margin: 0.3rem;
   }
   
   .tablero {
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
     align-items: center;
+    padding-top:3rem;
+  }
+
+  @media (max-width: 1180px) {
+    .tablero{
+        flex-direction: column;
+    }
+    .Keyboard button {
+      font-size: 1rem;
+    }
   }
