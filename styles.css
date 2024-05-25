@@ -140,6 +140,10 @@ body {
     .tablero{
         flex-direction: column;
     }
+    #pt1{
+      padding-top: 0.7rem;
+      padding-bottom: 0.6rem;
+    }
     .Keyboard button {
       font-size: 1rem;
     }

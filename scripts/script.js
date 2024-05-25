@@ -65,7 +65,7 @@ const initGame = (button,clickedLetter) => {
 }
 
 //Para crear los botones desde consola y los event listener es la accion que realizan.
-for (let i = 97; i < 122; i++) {
+for (let i = 97; i < 123; i++) {
     const button = document.createElement("button");
     button.innerText = String. fromCharCode (i);
     keyboardDiv.appendChild(button);
