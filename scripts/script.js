@@ -4,8 +4,9 @@ const guessesText = document.querySelector(".guesses-text b");
 const keyboardDiv = document.querySelector(".Keyboard");
 const gameModal = document.querySelector(".game-modal");
 const playAgainBtn = document.querySelector(".play-again");
+const playerSummary = document.querySelector(".player-summary b")
 
-let currentWord,correctLetters,wrongGuessCount;
+let currentWord,correctLetters,wrongGuessCount,wins=0,losses=0;
 const maxGuesses=6;
 
 
@@ -15,6 +16,7 @@ const resetGame = () => {
     wrongGuessCount =0;
     hangmanImage.src=`images/hangman-${wrongGuessCount}.svg`;
     guessesText.innerText = `${wrongGuessCount}/${maxGuesses}`;
+    playerSummary.innerText = `${wins} Ganadas /${losses} Perdidas.`;
     keyboardDiv.querySelectorAll("button").forEach(btn=>btn.disabled =false);
     wordDisplay.innerHTML = currentWord.split("").map(()=>`<li class="letter"></li>`).join("");
     gameModal.classList.remove("show");
@@ -60,8 +62,14 @@ const initGame = (button,clickedLetter) => {
 
     button.disabled = true;
     guessesText.innerText = `${wrongGuessCount}/${maxGuesses}`
-    if(wrongGuessCount===maxGuesses) return gameOver(false);
-    if(correctLetters.length===currentWord.length) return gameOver(true);
+    if(wrongGuessCount===maxGuesses){
+        losses++;
+        return gameOver(false);  
+    } 
+    if(correctLetters.length===currentWord.length){
+        wins++;
+        return gameOver(true);
+    }
 }
 
 //Para crear los botones desde consola y los event listener es la accion que realizan.
