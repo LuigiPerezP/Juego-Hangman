@@ -6,6 +6,7 @@ const getRandomWord = () => {
     const { word, hint } = wordList[Math.floor(Math.random() * wordList.length)];
   console.log(word);
   document.querySelector(".hint-text b").innerText = hint;
+  wordDisplay.innerHTML = word.split("").map(()=>'<li class="letter"></li>').join("");
 }
 
 //Para crear los botones desde consola.
