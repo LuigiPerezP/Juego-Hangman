@@ -15,13 +15,20 @@ const getRandomWord = () => {
 const initGame = (button,clickedLetter) => {
     //Se chequea si esta en la palabra.
     if(currentWord.includes(clickedLetter)){
-        console.log(clickedLetter, " is exist on the word");
+        //Se muestra en la rayita correspondiente la letra adivinada
+        [... currentWord].forEach( (letter, index) => {
+            if(letter === clickedLetter){
+                wordDisplay.querySelectorAll("li")[index].innerText=letter;
+                wordDisplay.querySelectorAll("li")[index].classList.add("guessed");
+            }
+        })
+
     }else{
         console.log(clickedLetter, " is not on the word");
     }
 }
 
-//Para crear los botones desde consola.
+//Para crear los botones desde consola y los event listener es la accion que realizan.
 for (let i = 97; i < 122; i++) {
     const button = document.createElement("button");
     button.innerText = String. fromCharCode (i);
