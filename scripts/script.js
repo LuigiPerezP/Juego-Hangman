@@ -2,8 +2,9 @@ const hangmanImage= document.querySelector(".Ahorcado-Grafica img");
 const wordDisplay = document.querySelector(".word-display");
 const guessesText = document.querySelector(".guesses-text b");
 const keyboardDiv = document.querySelector(".Keyboard");
+const gameModal = document.querySelector(".game-modal");
 
-let currentWord,wrongGuessCount =0;
+let currentWord, correctLetters=[],wrongGuessCount =0;
 const maxGuesses=6;
 
 const getRandomWord = () => {
@@ -15,12 +16,20 @@ const getRandomWord = () => {
   wordDisplay.innerHTML = word.split("").map(()=>`<li class="letter"></li>`).join("");
 }
 
+const gameOver = (isVictory) =>{
+    setTimeout(()=>{
+        gameModal.classList.add("show");
+    },300);
+}
+
+
 const initGame = (button,clickedLetter) => {
     //Se chequea si esta en la palabra.
     if(currentWord.includes(clickedLetter)){
         //Se muestra en la rayita correspondiente la letra adivinada
         [... currentWord].forEach( (letter, index) => {
             if(letter === clickedLetter){
+                correctLetters.push(letter);
                 wordDisplay.querySelectorAll("li")[index].innerText=letter;
                 wordDisplay.querySelectorAll("li")[index].classList.add("guessed");
             }
@@ -34,6 +43,8 @@ const initGame = (button,clickedLetter) => {
 
     button.disabled = true;
     guessesText.innerText = `${wrongGuessCount}/${maxGuesses}`
+    if(wrongGuessCount===maxGuesses) return gameOver(false);
+    if(correctLetters.length===currentWord.length) return gameOver(true);
 }
 
 //Para crear los botones desde consola y los event listener es la accion que realizan.
