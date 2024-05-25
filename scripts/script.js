@@ -4,8 +4,8 @@ const keyboardDiv = document.querySelector(".Keyboard");
 const getRandomWord = () => {
     //para generar una nueva paalbra y pista randomly
     const { word, hint } = wordList[Math.floor(Math.random() * wordList.length)];
-    console.log(word);
-    document.querySelector(".hint-text b").innerText = hint;
+  console.log(word);
+  document.querySelector(".hint-text b").innerText = hint;
 }
 
 //Para crear los botones desde consola.

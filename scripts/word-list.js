@@ -1,262 +1,206 @@
 const wordList = [
     {
-        word: "guitar",
-        hint: "A musical instrument with strings."
+        word: "guitarra",
+        hint: "Un instrumento musical con cuerdas."
     },
     {
-        word: "oxygen",
-        hint: "A colorless, odorless gas essential for life."
+        word: "oxigeno",
+        hint: "Un gas incoloro e inodoro esencial para la vida."
     },
     {
-        word: "mountain",
-        hint: "A large natural elevation of the Earth's surface."
+        word: "pintura",
+        hint: "Una forma de arte que utiliza colores en una superficie para crear imágenes o expresión."
     },
     {
-        word: "painting",
-        hint: "An art form using colors on a surface to create images or expression."
+        word: "astronomia",
+        hint: "El estudio científico de los objetos y fenómenos celestiales."
     },
     {
-        word: "astronomy",
-        hint: "The scientific study of celestial objects and phenomena."
-    },
-    {
-        word: "football",
-        hint: "A popular sport played with a spherical ball."
+        word: "futbol",
+        hint: "Un deporte popular que se juega con una pelota esférica."
     },
     {
         word: "chocolate",
-        hint: "A sweet treat made from cocoa beans."
+        hint: "Un dulce hecho a partir de granos de cacao."
     },
     {
-        word: "butterfly",
-        hint: "An insect with colorful wings and a slender body."
+        word: "mariposa",
+        hint: "Un insecto con alas coloridas y un cuerpo delgado."
     },
     {
-        word: "history",
-        hint: "The study of past events and human civilization."
+        word: "historia",
+        hint: "El estudio de eventos pasados y la civilización humana."
     },
     {
         word: "pizza",
-        hint: "A savory dish consisting of a round, flattened base with toppings."
+        hint: "Un plato salado que consiste en una base redonda y aplanada con ingredientes encima."
     },
     {
         word: "jazz",
-        hint: "A genre of music characterized by improvisation and syncopation."
+        hint: "Un género musical caracterizado por la improvisación y la sincopación."
     },
     {
-        word: "camera",
-        hint: "A device used to capture and record images or videos."
+        word: "camara",
+        hint: "Un dispositivo utilizado para capturar y grabar imágenes o videos."
     },
     {
-        word: "diamond",
-        hint: "A precious gemstone known for its brilliance and hardness."
+        word: "diamante",
+        hint: "Una piedra preciosa conocida por su brillo y dureza."
     },
     {
-        word: "adventure",
-        hint: "An exciting or daring experience."
+        word: "aventura",
+        hint: "Una experiencia emocionante o atrevida."
     },
     {
-        word: "science",
-        hint: "The systematic study of the structure and behavior of the physical and natural world."
+        word: "ciencia",
+        hint: "El estudio sistemático de la estructura y el comportamiento del mundo físico y natural."
     },
     {
-        word: "bicycle",
-        hint: "A human-powered vehicle with two wheels."
+        word: "bicicleta",
+        hint: "Un vehículo impulsado por humanos con dos ruedas."
     },
     {
-        word: "sunset",
-        hint: "The daily disappearance of the sun below the horizon."
+        word: "atardecer",
+        hint: "La desaparición diaria del sol debajo del horizonte."
     },
     {
-        word: "coffee",
-        hint: "A popular caffeinated beverage made from roasted coffee beans."
+        word: "cafe",
+        hint: "Una bebida popular con cafeína hecha a partir de granos de café tostados."
     },
     {
-        word: "dance",
-        hint: "A rhythmic movement of the body often performed to music."
+        word: "baile",
+        hint: "Un movimiento rítmico del cuerpo que a menudo se realiza con música."
     },
     {
-        word: "galaxy",
-        hint: "A vast system of stars, gas, and dust held together by gravity."
+        word: "galaxia",
+        hint: "Un vasto sistema de estrellas, gas y polvo unidos por la gravedad."
     },
     {
-        word: "orchestra",
-        hint: "A large ensemble of musicians playing various instruments."
+        word: "orquesta",
+        hint: "Un gran conjunto de músicos que tocan varios instrumentos."
     },
     {
-        word: "volcano",
-        hint: "A mountain or hill with a vent through which lava, rock fragments, hot vapor, and gas are ejected."
+        word: "volcán",
+        hint: "Una montaña o colina con una abertura por la cual se expulsa lava, fragmentos de roca, vapor caliente y gas."
     },
     {
-        word: "novel",
-        hint: "A long work of fiction, typically with a complex plot and characters."
+        word: "novela",
+        hint: "Una obra de ficción larga, generalmente con una trama y personajes complejos."
     },
     {
-        word: "sculpture",
-        hint: "A three-dimensional art form created by shaping or combining materials."
+        word: "escultura",
+        hint: "Una forma de arte tridimensional creada dando forma o combinando materiales."
     },
     {
-        word: "symphony",
-        hint: "A long musical composition for a full orchestra, typically in multiple movements."
+        word: "sinfonia",
+        hint: "Una larga composición musical para una orquesta completa, generalmente en varios movimientos."
     },
     {
-        word: "architecture",
-        hint: "The art and science of designing and constructing buildings."
+        word: "arquitectura",
+        hint: "El arte y la ciencia de diseñar y construir edificios."
     },
     {
         word: "ballet",
-        hint: "A classical dance form characterized by precise and graceful movements."
+        hint: "Una forma de danza clásica caracterizada por movimientos precisos y elegantes."
     },
     {
-        word: "astronaut",
-        hint: "A person trained to travel and work in space."
+        word: "girasol",
+        hint: "Una planta alta con una gran cabeza de flor amarilla."
     },
     {
-        word: "waterfall",
-        hint: "A cascade of water falling from a height."
+        word: "fantasia",
+        hint: "Un género de ficción imaginativa que involucra magia y elementos sobrenaturales."
     },
     {
-        word: "technology",
-        hint: "The application of scientific knowledge for practical purposes."
+        word: "telescopio",
+        hint: "Un instrumento óptico utilizado para ver objetos distantes en el espacio."
     },
     {
-        word: "rainbow",
-        hint: "A meteorological phenomenon that is caused by reflection, refraction, and dispersion of light."
-    },
-    {
-        word: "universe",
-        hint: "All existing matter, space, and time as a whole."
-    },
-    {
-        word: "piano",
-        hint: "A musical instrument played by pressing keys that cause hammers to strike strings."
-    },
-    {
-        word: "vacation",
-        hint: "A period of time devoted to pleasure, rest, or relaxation."
-    },
-    {
-        word: "rainforest",
-        hint: "A dense forest characterized by high rainfall and biodiversity."
-    },
-    {
-        word: "theater",
-        hint: "A building or outdoor area in which plays, movies, or other performances are staged."
-    },
-    {
-        word: "telephone",
-        hint: "A device used to transmit sound over long distances."
-    },
-    {
-        word: "language",
-        hint: "A system of communication consisting of words, gestures, and syntax."
-    },
-    {
-        word: "desert",
-        hint: "A barren or arid land with little or no precipitation."
-    },
-    {
-        word: "sunflower",
-        hint: "A tall plant with a large yellow flower head."
-    },
-    {
-        word: "fantasy",
-        hint: "A genre of imaginative fiction involving magic and supernatural elements."
-    },
-    {
-        word: "telescope",
-        hint: "An optical instrument used to view distant objects in space."
-    },
-    {
-        word: "breeze",
-        hint: "A gentle wind."
+        word: "brisa",
+        hint: "Un viento suave."
     },
     {
         word: "oasis",
-        hint: "A fertile spot in a desert where water is found."
+        hint: "Un lugar fértil en un desierto donde se encuentra agua."
     },
     {
-        word: "photography",
-        hint: "The art, process, or practice of creating images by recording light or other electromagnetic radiation."
+        word: "fotografia",
+        hint: "El arte, proceso o práctica de crear imágenes mediante la captura de luz u otra radiación electromagnética."
     },
     {
         word: "safari",
-        hint: "An expedition or journey, typically to observe wildlife in their natural habitat."
+        hint: "Una expedición o viaje, generalmente para observar la vida silvestre en su hábitat natural."
     },
     {
-        word: "planet",
-        hint: "A celestial body that orbits a star and does not produce light of its own."
+        word: "planeta",
+        hint: "Un cuerpo celeste que orbita alrededor de una estrella y no produce luz propia."
     },
     {
-        word: "river",
-        hint: "A large natural stream of water flowing in a channel to the sea, a lake, or another such stream."
+        word: "río",
+        hint: "Un gran flujo natural de agua que fluye en un canal hacia el mar, un lago u otro río similar."
     },
     {
         word: "tropical",
-        hint: "Relating to or situated in the region between the Tropic of Cancer and the Tropic of Capricorn."
+        hint: "Relativo o situado en la región entre el Trópico de Cáncer y el Trópico de Capricornio."
     },
     {
-        word: "mysterious",
-        hint: "Difficult or impossible to understand, explain, or identify."
+        word: "misterioso",
+        hint: "Difícil o imposible de entender, explicar o identificar."
     },
     {
         word: "enigma",
-        hint: "Something that is mysterious, puzzling, or difficult to understand."
+        hint: "Algo que es misterioso, desconcertante o difícil de entender."
     },
     {
-        word: "paradox",
-        hint: "A statement or situation that contradicts itself or defies intuition."
+        word: "paradoja",
+        hint: "Una afirmación o situación que se contradice a sí misma o desafía la intuición."
     },
     {
-        word: "puzzle",
-        hint: "A game, toy, or problem designed to test ingenuity or knowledge."
+        word: "rompecabezas",
+        hint: "Un juego, juguete o problema diseñado para poner a prueba la ingeniosidad o el conocimiento."
     },
     {
-        word: "whisper",
-        hint: "To speak very softly or quietly, often in a secretive manner."
+        word: "susurro",
+        hint: "Hablar muy suavemente o en voz baja, a menudo de manera secreta."
     },
     {
-        word: "shadow",
-        hint: "A dark area or shape produced by an object blocking the light."
+        word: "sombra",
+        hint: "Un área u forma oscura producida por un objeto que bloquea la luz."
     },
     {
-        word: "secret",
-        hint: "Something kept hidden or unknown to others."
+        word: "secreto",
+        hint: "Algo guardado oculto o desconocido para los demás."
     },
     {
-        word: "curiosity",
-        hint: "A strong desire to know or learn something."
+        word: "curiosidad",
+        hint: "Un fuerte deseo de saber o aprender algo."
     },
     {
-        word: "unpredictable",
-        hint: "Not able to be foreseen or known beforehand; uncertain."
+        word: "impredecible",
+        hint: "No se puede prever o conocer de antemano; incierto."
     },
     {
         word: "obfuscate",
-        hint: "To confuse or bewilder someone; to make something unclear or difficult to understand."
+        hint: "Confundir o desconcertar a alguien; hacer que algo sea poco claro o difícil de entender."
     },
     {
-        word: "unveil",
-        hint: "To make known or reveal something previously secret or unknown."
+        word: "desvelar",
+        hint: "Dar a conocer o revelar algo previamente secreto o desconocido."
     },
     {
-        word: "illusion",
-        hint: "A false perception or belief; a deceptive appearance or impression."
+        word: "ilusion",
+        hint: "Una percepción o creencia falsa; una apariencia o impresión engañosa."
     },
     {
-        word: "moonlight",
-        hint: "The light from the moon."
-    },
-    {
-        word: "vibrant",
-        hint: "Full of energy, brightness, and life."
+        word: "vibrante",
+        hint: "Lleno de energía, brillo y vida."
     },
     {
         word: "nostalgia",
-        hint: "A sentimental longing or wistful affection for the past."
+        hint: "Un anhelo sentimental o afecto melancólico por el pasado."
     },
     {
-        word: "brilliant",
-        hint: "Exceptionally clever, talented, or impressive."
+        word: "brillante",
+        hint: "Excepcionalmente inteligente, talentoso o impresionante."
     },
 ];
