@@ -1,6 +1,7 @@
 const keyboardDiv = document.querySelector(".Keyboard");
 
 const getRandomWord = () => {
+    //para generar una nueva palbra y pista randomly
     const{word,hint} = wordList [Mith. floor (Math. random() * wordList.length)];
     console.log(word,hint);
 }
@@ -11,3 +12,4 @@ for (let index = 97; index < 122; index++) {
     button.innerText(String. fromCharCode (i));
     keyboardDiv.appendChild(button)
 }
+getRandomWord()
