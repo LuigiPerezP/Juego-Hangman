@@ -3,9 +3,22 @@ const wordDisplay = document.querySelector(".word-display");
 const guessesText = document.querySelector(".guesses-text b");
 const keyboardDiv = document.querySelector(".Keyboard");
 const gameModal = document.querySelector(".game-modal");
+const playAgainBtn = document.querySelector(".play-again");
 
-let currentWord, correctLetters=[],wrongGuessCount =0;
+let currentWord,correctLetters,wrongGuessCount;
 const maxGuesses=6;
+
+
+const resetGame = () => {
+    //Se resetean variables internas y aspectos de la UI.
+    correctLetters=[]
+    wrongGuessCount =0;
+    hangmanImage.src=`images/hangman-${wrongGuessCount}.svg`;
+    guessesText.innerText = `${wrongGuessCount}/${maxGuesses}`;
+    keyboardDiv.querySelectorAll("button").forEach(btn=>btn.disabled =false);
+    wordDisplay.innerHTML = currentWord.split("").map(()=>`<li class="letter"></li>`).join("");
+    gameModal.classList.remove("show");
+}
 
 const getRandomWord = () => {
     //para generar una nueva palabra y pista randomly.
@@ -13,11 +26,16 @@ const getRandomWord = () => {
     currentWord=word;
   console.log(word);
   document.querySelector(".hint-text b").innerText = hint;
-  wordDisplay.innerHTML = word.split("").map(()=>`<li class="letter"></li>`).join("");
+  resetGame();
 }
 
 const gameOver = (isVictory) =>{
+    //Se muestran los resultados.
     setTimeout(()=>{
+        const modalText = isVictory ?  `Encontraste la palabra:` : `La palabra correcta era:`;
+        gameModal.querySelector("img").src = `images/${isVictory ? `victory` : `lost`}.gif`;
+        gameModal.querySelector("h4").innerText = `${isVictory ? `FELICIDADES!` : `PERDISTE!`}`;
+        gameModal.querySelector("p").innerHTML = `${modalText} <b>${currentWord}</b>`;
         gameModal.classList.add("show");
     },300);
 }
@@ -57,3 +75,4 @@ for (let i = 97; i < 122; i++) {
 }
 
 getRandomWord();
+playAgainBtn.addEventListener("click",getRandomWord);
