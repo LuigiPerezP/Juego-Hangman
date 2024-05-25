@@ -24,7 +24,6 @@ const getRandomWord = () => {
     //para generar una nueva palabra y pista randomly.
     const { word, hint } = wordList[Math.floor(Math.random() * wordList.length)];
     currentWord=word;
-  console.log(word);
   document.querySelector(".hint-text b").innerText = hint;
   resetGame();
 }
