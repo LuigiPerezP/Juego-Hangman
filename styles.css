@@ -3,11 +3,11 @@ body {
     margin: 2rem;
 }
 
-  .Keyboard {
-    margin:1rem;
+  .tablero .Keyboard {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content:center;
   }
 
   #pt1{
@@ -61,19 +61,14 @@ body {
     cursor: pointer;
 }
   .Keyboard button{
-    width: 3rem;
+    width: calc(100% / 9 - 5px);
+    text-transform: uppercase;
   }
 
   :where(.game-modal,.Keyboard) button:hover{
     background-color:bisque;
   }
   
-  #first,
-  #second,
-  #third {
-    display: flex;
-    justify-content: center;
-  }
   
   button {
     margin: 0.3rem;

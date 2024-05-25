@@ -1,15 +1,16 @@
+const wordDisplay = document.querySelector(".word-display");
 const keyboardDiv = document.querySelector(".Keyboard");
 
 const getRandomWord = () => {
     //para generar una nueva palbra y pista randomly
-    const{word,hint} = wordList [Mith. floor (Math. random() * wordList.length)];
+    const { word , hint } = wordList [Math.floor (Math. random() * wordList.length)];
     console.log(word,hint);
 }
 
 //Para crear los botones desde consola.
-for (let index = 97; index < 122; index++) {
+for (let i = 97; i < 122; i++) {
     const button = document.createElement("button");
-    button.innerText(String. fromCharCode (i));
+    button.innerText = String. fromCharCode (i);
     keyboardDiv.appendChild(button)
 }
-getRandomWord()
+getRandomWord();

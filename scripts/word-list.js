@@ -1,5 +1,5 @@
 const wordList = [
-    { word: "Cabeza", hint: "Parte del cuerpo" },
+  { word: "Cabeza", hint: "Parte del cuerpo" },
   { word: "Perro", hint: "Animal doméstico" },
   { word: "Libro", hint: "Objeto para leer" },
   { word: "Sol", hint: "Estrella que ilumina la Tierra" },
@@ -10,7 +10,6 @@ const wordList = [
   { word: "Gato", hint: "Animal doméstico" },
   { word: "Lápiz", hint: "Instrumento de escritura" },
   { word: "Manzana", hint: "Fruta roja" },
-  { word: "Montaña", hint: "Elevación natural del terreno" },
   { word: "Agua", hint: "Líquido vital" },
   { word: "Ojo", hint: "Órgano de la visión" },
   { word: "Mesa", hint: "Superficie plana para poner cosas" },
@@ -29,4 +28,4 @@ const wordList = [
   { word: "Risa", hint: "Expresión de alegría" },
   { word: "Viaje", hint: "Desplazamiento a otro lugar" },
   { word: "Color", hint: "Propiedad de los objetos" }
-]
+];
