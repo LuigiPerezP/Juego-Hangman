@@ -4,7 +4,7 @@ const keyboardDiv = document.querySelector(".Keyboard");
 let currentWord;
 
 const getRandomWord = () => {
-    //para generar una nueva paalbra y pista randomly
+    //para generar una nueva palabra y pista randomly.
     const { word, hint } = wordList[Math.floor(Math.random() * wordList.length)];
     currentWord=word;
   console.log(word);
@@ -13,7 +13,7 @@ const getRandomWord = () => {
 }
 
 const initGame = (button,clickedLetter) => {
-    //Se chequea si esta en la palabra
+    //Se chequea si esta en la palabra.
     if(currentWord.includes(clickedLetter)){
         console.log(clickedLetter, " is exist on the word");
     }else{
