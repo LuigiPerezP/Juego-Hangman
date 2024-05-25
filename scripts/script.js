@@ -1,7 +1,10 @@
+const hangmanImage= document.querySelector(".Ahorcado-Grafica img");
 const wordDisplay = document.querySelector(".word-display");
+const guessesText = document.querySelector(".guesses-text b");
 const keyboardDiv = document.querySelector(".Keyboard");
 
-let currentWord;
+let currentWord,wrongGuessCount =0;
+const maxGuesses=6;
 
 const getRandomWord = () => {
     //para generar una nueva palabra y pista randomly.
@@ -24,8 +27,13 @@ const initGame = (button,clickedLetter) => {
         })
 
     }else{
-        console.log(clickedLetter, " is not on the word");
+        //Se actualiza intetos fallidos y la foto del ahorcado va avanzando.
+        wrongGuessCount++;
+        hangmanImage.src=`images/hangman-${wrongGuessCount}.svg`;
     }
+
+    button.disabled = true;
+    guessesText.innerText = `${wrongGuessCount}/${maxGuesses}`
 }
 
 //Para crear los botones desde consola y los event listener es la accion que realizan.

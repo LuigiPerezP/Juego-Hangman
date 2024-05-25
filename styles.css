@@ -65,6 +65,11 @@ body {
     text-transform: uppercase;
   }
 
+  .Keyboard button[disabled]{
+    opacity:0.6;
+    pointer-events: none;
+  }
+
   :where(.game-modal,.Keyboard) button:hover{
     background-color:bisque;
   }
