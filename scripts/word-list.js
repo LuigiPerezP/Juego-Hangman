@@ -1,3 +1,8 @@
+/**
+ * Un array de objetos representando palabras y sus pistas.
+ * @type {Array}
+ * @author nelson
+ */
 const wordList = [
     {
         word: "guitarra",
@@ -13,11 +18,11 @@ const wordList = [
     },
     {
         word: "astronomia",
-        hint: "El estudio científico de los objetos y fenómenos celestiales."
+        hint: "El estudio cientifico de los objetos y fenomenos celestiales."
     },
     {
         word: "futbol",
-        hint: "Un deporte popular que se juega con una pelota esférica."
+        hint: "Un deporte popular que se juega con una pelota esferica."
     },
     {
         word: "chocolate",
@@ -29,7 +34,7 @@ const wordList = [
     },
     {
         word: "historia",
-        hint: "El estudio de eventos pasados y la civilización humana."
+        hint: "El estudio de eventos pasados y la civilizacion humana."
     },
     {
         word: "pizza",
@@ -37,11 +42,11 @@ const wordList = [
     },
     {
         word: "jazz",
-        hint: "Un género musical caracterizado por la improvisación y la sincopación."
+        hint: "Un genero musical caracterizado por la improvisacion y la sincopacion."
     },
     {
         word: "camara",
-        hint: "Un dispositivo utilizado para capturar y grabar imágenes o videos."
+        hint: "Un dispositivo utilizado para capturar y grabar imagenes o videos."
     },
     {
         word: "diamante",
@@ -53,23 +58,23 @@ const wordList = [
     },
     {
         word: "ciencia",
-        hint: "El estudio sistemático de la estructura y el comportamiento del mundo físico y natural."
+        hint: "El estudio sistemático de la estructura y el comportamiento del mundo fisico y natural."
     },
     {
         word: "bicicleta",
-        hint: "Un vehículo impulsado por humanos con dos ruedas."
+        hint: "Un vehiculo impulsado por humanos con dos ruedas."
     },
     {
         word: "atardecer",
-        hint: "La desaparición diaria del sol debajo del horizonte."
+        hint: "La desaparicion diaria del sol debajo del horizonte."
     },
     {
         word: "cafe",
-        hint: "Una bebida popular con cafeína hecha a partir de granos de café tostados."
+        hint: "Una bebida popular con cafeina hecha a partir de granos de cafe tostados."
     },
     {
         word: "baile",
-        hint: "Un movimiento rítmico del cuerpo que a menudo se realiza con música."
+        hint: "Un movimiento ritmico del cuerpo que a menudo se realiza con musica."
     },
     {
         word: "galaxia",
@@ -77,15 +82,15 @@ const wordList = [
     },
     {
         word: "orquesta",
-        hint: "Un gran conjunto de músicos que tocan varios instrumentos."
+        hint: "Un gran conjunto de musicos que tocan varios instrumentos."
     },
     {
-        word: "volcán",
-        hint: "Una montaña o colina con una abertura por la cual se expulsa lava, fragmentos de roca, vapor caliente y gas."
+        word: "volcan",
+        hint: "Una montana o colina con una abertura por la cual se expulsa lava, fragmentos de roca, vapor caliente y gas."
     },
     {
         word: "novela",
-        hint: "Una obra de ficción larga, generalmente con una trama y personajes complejos."
+        hint: "Una obra de ficcion larga, generalmente con una trama y personajes complejos."
     },
     {
         word: "escultura",
@@ -93,15 +98,15 @@ const wordList = [
     },
     {
         word: "sinfonia",
-        hint: "Una larga composición musical para una orquesta completa, generalmente en varios movimientos."
+        hint: "Una larga composicion musical para una orquesta completa, generalmente en varios movimientos."
     },
     {
         word: "arquitectura",
-        hint: "El arte y la ciencia de diseñar y construir edificios."
+        hint: "El arte y la ciencia de disenar y construir edificios."
     },
     {
         word: "ballet",
-        hint: "Una forma de danza clásica caracterizada por movimientos precisos y elegantes."
+        hint: "Una forma de danza clasica caracterizada por movimientos precisos y elegantes."
     },
     {
         word: "girasol",
@@ -109,11 +114,11 @@ const wordList = [
     },
     {
         word: "fantasia",
-        hint: "Un género de ficción imaginativa que involucra magia y elementos sobrenaturales."
+        hint: "Un genero de ficcion imaginativa que involucra magia y elementos sobrenaturales."
     },
     {
         word: "telescopio",
-        hint: "Un instrumento óptico utilizado para ver objetos distantes en el espacio."
+        hint: "Un instrumento optico utilizado para ver objetos distantes en el espacio."
     },
     {
         word: "brisa",
@@ -121,43 +126,43 @@ const wordList = [
     },
     {
         word: "oasis",
-        hint: "Un lugar fértil en un desierto donde se encuentra agua."
+        hint: "Un lugar fertil en un desierto donde se encuentra agua."
     },
     {
         word: "fotografia",
-        hint: "El arte, proceso o práctica de crear imágenes mediante la captura de luz u otra radiación electromagnética."
+        hint: "El arte, proceso o practica de crear imagenes mediante la captura de luz u otra radiacion electromagnetica."
     },
     {
         word: "safari",
-        hint: "Una expedición o viaje, generalmente para observar la vida silvestre en su hábitat natural."
+        hint: "Una expedicion o viaje, generalmente para observar la vida silvestre en su habitat natural."
     },
     {
         word: "planeta",
         hint: "Un cuerpo celeste que orbita alrededor de una estrella y no produce luz propia."
     },
     {
-        word: "río",
-        hint: "Un gran flujo natural de agua que fluye en un canal hacia el mar, un lago u otro río similar."
+        word: "rio",
+        hint: "Un gran flujo natural de agua que fluye en un canal hacia el mar, un lago u otro rio similar."
     },
     {
         word: "tropical",
-        hint: "Relativo o situado en la región entre el Trópico de Cáncer y el Trópico de Capricornio."
+        hint: "Relativo o situado en la region entre el Tropico de Cancer y el Tropico de Capricornio."
     },
     {
         word: "misterioso",
-        hint: "Difícil o imposible de entender, explicar o identificar."
+        hint: "Dificil o imposible de entender, explicar o identificar."
     },
     {
         word: "enigma",
-        hint: "Algo que es misterioso, desconcertante o difícil de entender."
+        hint: "Algo que es misterioso, desconcertante o dificil de entender."
     },
     {
         word: "paradoja",
-        hint: "Una afirmación o situación que se contradice a sí misma o desafía la intuición."
+        hint: "Una afirmacion o situacion que se contradice a si misma o desafia la intuicion."
     },
     {
         word: "rompecabezas",
-        hint: "Un juego, juguete o problema diseñado para poner a prueba la ingeniosidad o el conocimiento."
+        hint: "Un juego, juguete o problema disenado para poner a prueba la ingeniosidad o el conocimiento."
     },
     {
         word: "susurro",
@@ -165,11 +170,11 @@ const wordList = [
     },
     {
         word: "sombra",
-        hint: "Un área u forma oscura producida por un objeto que bloquea la luz."
+        hint: "Un area u forma oscura producida por un objeto que bloquea la luz."
     },
     {
         word: "secreto",
-        hint: "Algo guardado oculto o desconocido para los demás."
+        hint: "Algo guardado oculto o desconocido para los demas."
     },
     {
         word: "curiosidad",
@@ -181,7 +186,7 @@ const wordList = [
     },
     {
         word: "obfuscate",
-        hint: "Confundir o desconcertar a alguien; hacer que algo sea poco claro o difícil de entender."
+        hint: "Confundir o desconcertar a alguien; hacer que algo sea poco claro o dificil de entender."
     },
     {
         word: "desvelar",
@@ -189,15 +194,15 @@ const wordList = [
     },
     {
         word: "ilusion",
-        hint: "Una percepción o creencia falsa; una apariencia o impresión engañosa."
+        hint: "Una percepcion o creencia falsa; una apariencia o impresion enganosa."
     },
     {
         word: "vibrante",
-        hint: "Lleno de energía, brillo y vida."
+        hint: "Lleno de energia, brillo y vida."
     },
     {
         word: "nostalgia",
-        hint: "Un anhelo sentimental o afecto melancólico por el pasado."
+        hint: "Un anhelo sentimental o afecto melancolico por el pasado."
     },
     {
         word: "brillante",
