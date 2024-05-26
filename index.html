@@ -1,46 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahorcado Carrillo-Perez</title>
-    <link rel="stylesheet" href="./styles.css"/>
-    <script src="scripts/word-list.js" defer></script>
-    <script src="scripts/script.js" defer></script>
-</head>
-
-<body>
-    <div class="game-modal">
-        <div class="content">
-            <img src="images/lost.gif" alt="gif">
-            <h4>Perdiste!</h4>
-            <p>La palabra correcta era: <b>arcoiris</b></p>
-            <button class="play-again">Jugar De Nuevo</button>
-        </div>
-    </div>
-    <div class="tablero">
-        <div id="pt1">
-            <div class="Ahorcado-Grafica">
-                <img src="images/hangman-0.svg" alt="hangman-img">
-            </div>
-            <ul class="word-display"></ul>
-        </div>
-        <div id="pt2">
-            <h2 class="hint-text">
-                Pista:
-                <b>Es un objeto usable.</b>
-            </h2>
-            <h3 class="guesses-text">
-                Intentos Fallidos:
-                <b> 0/6</b>
-            </h3>
-            <h4 class="player-summary">
-                Rendimiento:
-                <b> 0 Ganadas /0 Perdidas.</b>
-            </h4>
-            <div class="Keyboard">
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+<!-- 
+    Hangman Carrillo-Perez
+    Sistemas de Información
+    Universidad Metropolitana. Trimestre 2324-3
+    Hecho por: Nelson Carrillo & Luis Pérez
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Ahorcado Carrillo-Perez</title>
+     <link rel="stylesheet" href="./styles.css"/> <!-- Link al arhivo CSS -->
+     <script src="scripts/word-list.js" defer></script> <!-- Link al archivo que carga array con palabras y sus pistas -->
+     <script src="scripts/script.js" defer></script> <!-- Link al archivo de toda la funcionalidad javascript -->
+ </head>
+ 
+ <body>
+     <div class="game-modal">
+         <div class="content">
+             <img src="images/lost.gif" alt="gif"> <!-- Gif para cuando pierde el usuario -->
+             <h4>Perdiste!</h4> <!-- Titulo para cuando pierde el usuario -->
+             <p>La palabra correcta era: <b>arcoiris</b></p> <!-- Parte donde se muestra la que era la palabra correcta -->
+             <button class="play-again">Jugar De Nuevo</button> <!-- Botón para volver a jugar -->
+         </div>
+     </div>
+     <div class="tablero">
+         <div id="pt1">
+             <div class="Ahorcado-Grafica">
+                 <img src="images/hangman-0.svg" alt="hangman-img"> <!-- Imagen del ahorcado la que se va actualizando si falla -->
+             </div>
+             <ul class="word-display"></ul> <!-- Estrrctura como lista para mostrar las rayitas de cada letra de la palabra correcta -->
+         </div>
+         <div id="pt2">
+             <h2 class="hint-text">
+                 Pista:
+                 <b>Es un objeto usable.</b> <!-- Pista de la palabra tomada del array cargado previamente-->
+             </h2>
+             <h3 class="guesses-text">
+                 Intentos Fallidos:
+                 <b> 0/6</b> <!-- Número de intentos fallidos -->
+             </h3>
+             <h4 class="player-summary">
+                 Rendimiento:
+                 <b> 0 Ganadas /0 Perdidas.</b> <!-- Player's performance, algo así como la tabla del resumen de cómo ha jugado. -->
+             </h4>
+             <div class="Keyboard">
+             </div>
+         </div>
+     </div>
+ </body>
+ </html>

@@ -1,3 +1,8 @@
+/**
+ * Un array de objetos representando palabras y sus pistas.
+ * @type {Array}
+ * @author nelson
+ */
 const wordList = [
     {
         word: "guitarra",
